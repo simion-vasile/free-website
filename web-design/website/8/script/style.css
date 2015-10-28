@@ -1,0 +1,122 @@
+@charset "utf-8";
+	/* CSS Document */
+	
+*{
+		-webkit-transition:2s;
+				transition:2s;
+}
+
+.hover{
+	width:100%;
+	min-height:0px;
+	padding:4px;
+	position:fixed;
+	border-bottom:3px solid rgba(41,89,99,.5);
+	background:rgba(41,89,99,.5);
+}
+	#arrow-down{
+		width:30px;
+		height:30px;
+		float:right;
+		position:relative;
+		top:10px;
+		right:2px;
+		cursor:pointer;
+		background:rgba(41,89,99,.5) url(../picture/arrow-down.png);
+	}
+	
+	.all{
+		width:90%;
+		margin:auto;
+	}
+	
+		header{
+	
+		}
+		body{
+			margin:0px;
+			padding:0px;
+			background:url(../picture/bg.png);
+			background-attachment:fixed;
+			font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		footer{
+	
+		}
+		
+		section{
+			width:100%;
+			height:500px;
+			float:left;
+			margin:10px;
+			padding:10px;
+			background:rgba(41,89,99,.5);
+		}
+			.top{
+				height:30px;
+				padding:10px;
+				background:rgba(15,55,65,.8);
+			}
+				.square, .comment, .write, .photo, .setting{
+					width:30px;
+					height:30px;
+					float:left;
+					cursor:pointer;
+					margin-left:20px;
+				}
+				.square{background:url(../picture/squares.png);}
+				.comment{background:url(../picture/comment.png);}
+				.write{background:url(../picture/write.png);}
+				.photo{background:url(../picture/photo.png);}
+				.setting{background:url(../picture/setting.png);}
+				.square1{
+					width:180px;
+					height:300px;
+					position:relative;
+					top:27px;
+					padding:10px;
+					background:rgba(15,55,65,.8);
+					display:none;
+				}
+				.square1 a{display:block;}
+				
+			.middle1, .middle2{
+				width:49.9%;
+				height:300px;
+			}
+			.middle1{float:left;}
+			.middle2{float:right;}
+			.middle3{height:300px;}
+			.middle1, .middle2, .middle3{background:rgba(43,61,75,.8);}
+			.bottom1, .bottom2{
+				width:49.9%;
+				height:150px;
+			}
+			.bottom1{float:left;}
+			.bottom2{float:right;}
+			.bottom3{height:150px;}
+			.bottom1, .bottom2, .bottom3{background:rgba(7,39,54,.8);}
+			
+			article{
+			
+			}
+		
+h1{}
+p{}	
+a:link{ text-decoration:none;color:white; }
+a:hover{ text-decoration:underline;color:white; }
+a:active{ text-decoration:none;color:white; }
+a:visited{ text-decoration:none;color:white; }
+
+.author{
+		width:auto;
+		height:18px;
+		text-align:right;
+		font-size:.6em;
+		position:fixed;
+		bottom:0px;
+		float:right;
+		padding:3px;
+		right:5px;
+		background:rgba(41,89,99,.5);
+}

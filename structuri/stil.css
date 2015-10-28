@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+-webkit-touch-callout:none;
+  -webkit-user-select:none;
+   -khtml-user-select:none;
+     -moz-user-select:none;
+	  -ms-user-select:none;
+	      user-select:none; 
+}
+
+*{-webkit-transition:.7s; transition:.7s;}
+
+.all{
+	width:100%;
+	height:auto;
+}
+	header, .header1, .transparent{
+		min-width:400px;
+	    max-width:100%;
+	}
+	header{
+		height:90px;
+	}
+		.header1{
+			height:20%;
+			font-size:.5em;
+			color:rgba(255,255,255,1);
+			background:rgba(6,35,109,.9);
+		}
+			.header1-1{width:90%;margin:auto;padding:0px;}
+				.header1-2{width:auto;float:left;}				
+		
+		.header2{
+			width:100%;
+			height:80%;
+			background:rgba(26,88,138,.9);
+		}
+			.header2-1{width:90%;margin:auto;padding:0px;}
+				.header2-2{width:35%;float:left;}
+				.header2-3{
+					width:150px;
+					height:auto;
+					float:right;
+				}
+				nav{
+					font-size:.5em;
+					display:none;
+				}
+				nav:before{
+					content: "";
+					width: 0px;
+					height: 15px;
+					display: block;
+					position: relative;					
+					top: 0;
+					left: 15px;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid rgba(6,35,109,.9);
+
+				}
+					.link{
+						padding:3px;
+						background:rgba(6,35,109,.9);
+						border-bottom:1px solid rgba(26,88,138,.9);
+					}
+					.link a{ color:#FFF; }
+					.link a:hover{ color:rgba(255,102,51,1); }
+				
+				
+		#header-fix{
+			width:100%;
+			height:40px;
+			position:fixed;
+			z-index:10;
+			background:rgba(26,88,138,.9);
+			display:none;
+		}		
+	.transparent{
+		height:150px;
+		background: url(poze/body.png) no-repeat;
+		background-size:100%;
+		-webkit-transition:2s;
+				transition:2s;
+	}
+	
+	.adsense{
+		width:70%;
+		height:80px;
+		margin:auto;
+		display:none;
+	}
+	.adsense1{
+		width:90%;
+		height:255px;
+		display:none;
+		margin:auto 50px;
+	}
+		.adsense1-1{width:250px;height:250px;float:left; border:1px solid;}
+		.adsense1-2{width:250px;height:250px;float:right; border:1px solid;}
+		
+		.text{width:100%;}
+			.text1{
+				min-width:370px;
+				max-width:90%;
+				min-height:300px;
+				max-height:800px;
+				margin:auto;
+				background:#FFF;
+				padding:2%;
+			}
+			.text1 > article{
+				min-width:400px;
+				max-width:401px;
+				padding:10px;
+				color:rgba(0,0,102,1);
+				float:left;
+			}
+			.text1 > div h1{
+				min-width:400px;
+				max-width:700px;
+				height:300px;
+				text-align:center;
+				float:right;
+				color:rgba(0,0,102,1);
+				background: url(poze/free-website.png) no-repeat;border:1px solid
+			}
+		
+		section{
+			min-width:370px;
+			max-width:90%;
+			min-height:2200px;
+			max-height:5500px;
+			padding:2%;
+			margin:auto;
+			background:rgba(255,255,255,1);
+		}
+		section:hover{ box-shadow: inset 0px 0px 5px rgba(0,102,255,1) }
+			.website{
+				width:350px;
+				height:200px;
+				overflow:hidden;
+				float:left;
+				background:rgba(26,88,138,.1) url(poze/blank.png) no-repeat;
+				background-size:100%;
+				border:10px solid rgba(194,194,194,0);
+				-webkit-transition:.2s;
+						transition:.2s;
+			}
+			.website:hover{
+				box-shadow: inset 0px 0px 2px rgba(0,102,255,1);
+				border:10px solid rgba(6,35,109,.9);
+			}
+				.website1{
+					width:350px;
+					height:200px;
+					position:relative;
+					z-index:2;
+					top:-200px;
+					background:rgba(26,88,138,.5);
+				}
+					.download, .visit{
+						width:120px;
+						height:18px;
+						padding:8px;
+						font-size:.6em;
+						text-align:center;
+						border:1px solid rgba(0,0,102,.1);
+						position:relative;
+						background:rgba(26,88,138,.8);
+						top:130px;
+					}
+					.download{ float:left;left:20px; }
+					.visit{ float:right;right:20px; }
+					.download:hover, .visit:hover{box-shadow:inset 0px 0px 3px rgba(255,255,255,1);border:1px solid;}
+			.website:hover > .website1{ top:0px; -webkit-transition:.1s; transition:.1s; transition-delay:.7s;}	
+		
+
+footer{
+	height:120px;
+	background:rgba(26,88,138,.9);
+}
+	.footer{
+		min-width:370px;
+		max-width:90%;
+		margin:auto;
+	}
+.banda{
+	width:100%;
+	height:20px;
+	background:rgba(6,35,109,.9);
+}
+
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#f7f7f7;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+a{
+	color:#FFF;
+	text-decoration:none;
+	font-size:1.6em;
+	font-weight:bold;
+}
+button{
+	width:150px;
+	height:30px;
+	font-size:1.1em;
+	text-align:left;
+	cursor:pointer;
+	color:#FFF;
+	border:1px solid rgba(0,102,255,1);
+	background:rgba(0,153,255,1) url(poze/linii.png);
+}
+button:hover{ background:#06F url(poze/linii2.png); box-shadow:inset 0px 0px 3px rgba(0,0,153,1) }
+
+
+h1{font-size:1.9em;margin:0px;padding:0px;}
+p{text-align:justify;}
+ol li{list-style-type:none;display:inline;margin:0px;}
+ul{list-style-type:none;float:left;font-size:.6em;}
+.ml10{margin-left:10px;}
+.mt10{margin-top:10px;}
+.mt3{margin-top:3px;}
+.fl{float:left;}
+.fr{float:right;}
+.padding10{padding:10px;}
+.poza{ overflow:hidden; position:relative; z-index:1; top:-200px;-webkit-transition:5s;transition:5s; }
+.poza:hover > img{ margin-top:-200px; }
+.none{}
+
+
+
+
+
+@media only screen and (max-width:1300px){ .transparent{ height:120px; }section{height:2700px; }
+@media only screen and (max-width:1000px){ .transparent{ height:100px; }section{height:2600px; }
+@media only screen and (max-width:860px){
+	.header2-2{height:80%;font-size:.7em;}
+	.transparent{ height:80px; }
+	 section{height:5000px;}
+	.adsense1{height:510px;}
+}
+@media only screen and (max-width:450px){
+	.header2-2, nav{ font-size:.6em }
+	.transparent{ height:50px; }
+	 section{height:5000px;}
+}
